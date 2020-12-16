@@ -2,7 +2,6 @@ package com.application.se2.model;
 
 import com.application.se2.misc.IDGenerator;
 
-
 /**
  * Article is an Entity-class that represents an article.
  * 
@@ -99,5 +98,4 @@ public class Article implements Entity {
 		this.price = price;
 		return this;
 	}
-
 }

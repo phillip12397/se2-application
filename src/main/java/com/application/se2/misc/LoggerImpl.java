@@ -4,16 +4,17 @@ import static com.application.se2.AppConfigurator.LoggerConfig;
 import static com.application.se2.AppConfigurator.LoggerTopics;
 
 import com.application.se2.model.Entity;
+
 import org.apache.log4j.ConsoleAppender;
 import org.apache.log4j.Level;
 import org.apache.log4j.SimpleLayout;
-
 
 /**
  * Local implementation of the Logger interface.
  *
  * @author sgra64
  */
+
 class LoggerImpl implements Logger {
     private static LoggerImpl instance = null;
     //private final java.util.logging.Logger realLogger; // Java's built‐in logging
@@ -95,7 +96,7 @@ class LoggerImpl implements Logger {
 
                 case PropertiesAltered:
                 case FieldAccessAltered:
-                    System.out.println(msg);
+                    realLogger.info(msg);
                     break;
 
                 case RepositoryLoaded:
@@ -148,5 +149,4 @@ class LoggerImpl implements Logger {
     public void error(String message, Exception exception) {
         log(LoggerTopics.Error, message);
     }
-
 }

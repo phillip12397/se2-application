@@ -6,13 +6,13 @@ import java.util.List;
 
 import com.application.se2.misc.IDGenerator;
 
-
 /**
  * Customer is an Entity-class that represents a customer.
  * 
  * @author sgra64
  * 
  */
+
 public class Customer implements Entity {
 	private static final long serialVersionUID = 1L;
 
@@ -44,6 +44,7 @@ public class Customer implements Entity {
 	 * @param name Customer name.
 	 */
 	public Customer( final String name ) {
+
 		this( null, name );
 	}
 

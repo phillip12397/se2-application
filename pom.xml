@@ -54,7 +54,6 @@
 		<artifactId>junit</artifactId>
 		<scope>test</scope>
 	  </dependency>
-
 	  <!-- include open JavaFX openjfx dependency for Java -->
 	  <!-- https://stackoverflow.com/questions/52653836/maven-shade-javafx-runtime-components-are-missing -->
 	  <dependency>
@@ -67,7 +66,6 @@
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-
 	</dependencies>
 
 	<!-- Configurations for build stage. -->

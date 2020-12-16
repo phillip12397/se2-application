@@ -6,6 +6,6 @@ data*
 /log*
 *.tar
 se2-application.iml
-output
+*.txt
 .idea
 target
