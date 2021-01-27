@@ -2,6 +2,7 @@ package com.application.se2.model;
 
 import com.application.se2.misc.IDGenerator;
 
+
 /**
  * Article is an Entity-class that represents an article.
  * 
@@ -23,6 +24,14 @@ public class Article implements Entity {
 
 	private String price;
 
+
+	/**
+	 * Private default constructor (required by JSON deserialization).
+	 */
+	@SuppressWarnings("unused")
+	private Article() {
+		this( null, null );
+	}
 
 	/**
 	 * Public constructor.
@@ -98,4 +107,5 @@ public class Article implements Entity {
 		this.price = price;
 		return this;
 	}
+
 }
