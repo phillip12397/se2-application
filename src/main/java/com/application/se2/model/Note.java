@@ -28,6 +28,16 @@ public class Note implements Serializable {
 
 
 	/**
+	 * Default constructor needed by JSON deserialization and Hibernate (private
+	 * is sufficient). Public default constructor needed by Hibernate/JPA access.
+	 * Otherwise Hibernate Error: HHH000142: Bytecode enhancement failed).
+	 */
+	public Note() {
+		this.timeStamp = new Date();
+		this.noteText = "";
+	}
+
+	/**
 	 * Public constructor.
 	 * Example noteStr: "2018-04-02 10:16:24:868, This is a text entry."
 	 * 
